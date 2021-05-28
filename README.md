@@ -15,9 +15,22 @@ The goal of the project is to offer a set of tools and utilities that do 1 simpl
 
  > Create a set of deterministic tools that given the same input, will always yield a unique name given a set of constraints. 
 
-# The Generators
+# The Code
 
-Now. Generating these inputs is where a LOT of computer science will come into play, and we will need to offer a large number of `generators` that will be able to reproduce input based on the state of an environment. 
+Introducing `libdname` which does one simple thing. 
+
+Given an arbitrary input, a human pronouncable deterministic name will be produced.
+
+The internal library is effectively just a bijective sha256 implementation with a library of pronouncable words. The implementation against various domains in computer science is where `libdname` will truly shine.
+
+Given a mac address -> you get a name.
+Given a kernel config -> you get a name.
+Given a volume ID -> you get a name.
+Given a docker image -> you get a name. 
+Given a sha of a code base -> you get a name.
+
+By identifying a static (unchanging) component of your system - you can now generate a unique name at runtime.
+
 
 # The Hashing Mechanisms 
 
