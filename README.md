@@ -1,5 +1,7 @@
 # The Naming Project
 
+See also [libdname](https://github.com/the-naming-project/dname) for the concrete implementation.
+
 Hello. The only thing you need to know about me is that I am a very old, very lazy, and very grumpy engineer who has set out on one simple mission.
 
 > To solve naming things in computer science once and for all.  
